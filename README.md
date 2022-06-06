@@ -27,4 +27,12 @@ button to emit the 'returnPressed' signal.
     QObject::connect(lineEdit, &QLineEdit::returnPressed,     this, MyClass::handleReturnPressed);
 ```
 
+## To use:
+Copy QClearLineEdit.h and QClearLineEdit.cpp to your project. Where ever you use QLineEdit, you can use
+QClearLineEdit. Enable the new signal by calling:
+```
+    lineEdit->enableReturnPressedOnClear();
+```
+QClearLineEdit can be used in 'Designer' by promoting 'QClearLineEdit' from 'QLineEdit'.
+
 
